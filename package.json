@@ -1,0 +1,22 @@
+{
+  "name": "adonis-react-tailwind-workspaces-template",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^5.1.8"
+  },
+  "workspaces": {
+    "nohoist": [
+      "*"
+    ],
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "backend": "cd packages/backend && yarn",
+    "frontend": "cd packages/frontend && yarn",
+    "shared": "cd packages/shared && yarn"
+  }
+}
